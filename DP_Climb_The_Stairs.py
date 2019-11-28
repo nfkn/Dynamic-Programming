@@ -36,7 +36,8 @@ class DP_CTS:
             way[index] = way[index-1] + way[index-2]
         return way[num]
 
-
+# python动态规划算法计算耗时较大，与c语言编写的动态规划相比要慢10倍左右
+# 采用计算斐波拉契数列的方式非常快
 if __name__ == '__main__':
     num = 45000
     DP = DP_CTS()
